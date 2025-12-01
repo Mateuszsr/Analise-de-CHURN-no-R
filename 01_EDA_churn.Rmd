@@ -1,6 +1,6 @@
 ---
 title: "Bank Credit Card Churn - EDA"
-author: "Seu Nome"
+author: "Mateus Ramos Silva"
 date: "`r Sys.Date()`"
 output: html_document
 ---
