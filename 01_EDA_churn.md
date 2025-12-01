@@ -101,4 +101,16 @@ And as a result, the mentioned business problem will be resolved.
 
 ------------------------------------------------------------------------
 
-## EDA: Balanceamento da variável alvo (Churn)
+## Importing the libraries
+
+```{r setup, echo=FALSE}
+library(tidyverse)
+library(janitor)    # clean_names()
+library(naniar)     # vis_miss()
+library(skimr)      # skim()
+library(ggpubr)     # ggarrange
+library(ggplot2)
+library(scales)     # percent_format
+library(rlang)
+
+
