@@ -112,5 +112,46 @@ library(ggpubr)     # ggarrange
 library(ggplot2)
 library(scales)     # percent_format
 library(rlang)
+```
+## Importing the dataset
+
+```{r import-data}
+# Defina o caminho do dataset
+data_path <- "meus_dados.csv"
+
+# Importação do dataset
+df <- read_csv(data_path) %>% clean_names()
+
+# Estrutura geral
+glimpse(df)
+
+# Resumo das variáveis
+skim(df)
+```
+
+## Explaining the variables
+
+The dataset contains information about bank credit card customers. Below is a brief description of the variables:
+
+- clientnum: Unique identifier of the customer.
+- attrition_flag: Indicates whether the customer churned.
+- customer_age: Customer age.
+- gender: Customer gender.
+- dependent_count: Number of dependents.
+- education_level: Highest education level attained.
+- marital_status: Marital status.
+- income_category: Annual income range.
+- card_category: Type of credit card.
+- months_on_book: Total months the customer has been with the bank.
+- total_relationship_count: Total number of products held.
+- months_inactive_12_mon: Number of inactive months in the last 12 months.
+- contacts_count_12_mon: Number of contacts in the last 12 months.
+- credit_limit: Assigned credit limit.
+- total_amt_chng_q4_q1: Change in transaction amount.
+- total_trans_amt: Total transaction amount in the last 12 months.
+- total_trans_ct: Total transaction count in the last 12 months.
+- avg_utilization_ratio: Average utilization rate of the credit line.
+
+
 
 
